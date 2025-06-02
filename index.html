@@ -264,6 +264,73 @@
         .project-link:hover {
             color: #2980b9;
         }
+        /* Personal Interests Section */
+        .interests {
+            background: white;
+        }
+
+        .interests-content {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .interests-content p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .photo-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .photo-info {
+            padding: 1.5rem;
+        }
+
+        .photo-info h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .photo-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .achievement-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
 
         /* Contact Section */
         .contact {
@@ -362,6 +429,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -525,7 +593,51 @@
             </div>
         </div>
     </section>
-
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">Beyond Finance</h2>
+            <div class="interests-content">
+                <p>When I'm not analyzing markets or building models, I pursue activities that challenge me physically and mentally. These experiences have taught me discipline, precision, and perseverance - qualities that translate directly to my work in quantitative finance.</p>
+            </div>
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <img src="assets/images/level-2-instructor.png" alt="Archery Competition" onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center'">
+                    <div class="photo-info">
+                        <h3>Competitive Archery</h3>
+                        <p>I have started my archery journey freshman year in college, it taught me thinking in the present moment and like a markovian process, not let the past define me.</p>
+                        <span class="achievement-badge">NTS Level 2 Certified</span>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/archery2.jpg" alt="Archery Training" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop&crop=center'">
+                    <div class="photo-info">
+                        <h3>Teaching & Leadership</h3>
+                        <p>As Beginner Lead at Sun God Archery, I taught fundamental techniques to over 30 new archers, developing communication and mentorship skills.</p>
+                        <span class="achievement-badge">Instructor Experience</span>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/hiking1.jpg" alt="Mountain Hiking" onerror="this.src='https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=250&fit=crop&crop=center'">
+                    <div class="photo-info">
+                        <h3>Mountain Hiking</h3>
+                        <p>Exploring California's diverse landscapes, from coastal trails to mountain peaks. Hiking teaches patience and strategic planning - essential skills for long-term investment strategies.</p>
+                        <span class="achievement-badge">Weekend Explorer</span>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/hiking2.jpg" alt="Nature Photography" onerror="this.src='https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=400&h=250&fit=crop&crop=center'">
+                    <div class="photo-info">
+                        <h3>Outdoor Adventures</h3>
+                        <p>Capturing moments in nature while building physical and mental resilience. These experiences provide perspective and balance to intense quantitative work.</p>
+                        <span class="achievement-badge">Photography Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
